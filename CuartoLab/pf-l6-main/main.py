@@ -9,7 +9,7 @@
 def trivia_fetch(num):
   #segun uan trivia es una serie de preguntaas en un juego y si las reslpondes ganas un premio
   trivia = {
-    "number": num, #si no no cumple es number aunque nose idnidca lo indico al  compiñar test
+    "number": num, #si no no cumple es number aunque no se indico en las instrucciones, lo indico al compilar el test
     "es_par": num % 2 == 0,
     "al_cuadrado": num ** 2,
     "es_positivo": num > 0
