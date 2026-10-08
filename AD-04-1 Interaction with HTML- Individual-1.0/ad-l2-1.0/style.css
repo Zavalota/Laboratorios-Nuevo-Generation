@@ -1,0 +1,14 @@
+html {
+    height: 100%;
+    width: 100%;
+}
+
+.clic-activo {
+  cursor: pointer;
+}
+
+.palabra-arroz {
+  cursor: pointer;
+  text-decoration: underline;
+  font-weight: bold;
+}
