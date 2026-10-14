@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width">
+  <title>replit</title>
+  <link href="style.css" rel="stylesheet" type="text/css" />
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
+</head>
+
+<body class="bg-light text-dark">
+
+  <nav class="navbar navbar-expand-lg navbar-dark bg-primary sticky-top shadow-sm">
+    <div class="container">
+      <a class="navbar-brand fw-bold" href="#inicio">MiBlogTech</a>
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="navbarNav">
+        <ul class="navbar-nav ms-auto">
+          <li class="nav-item"><a class="nav-link active" href="#inicio">Inicio</a></li>
+          <li class="nav-item"><a class="nav-link" href="#quienes-somos">Quiénes somos</a></li>
+          <li class="nav-item"><a class="nav-link" href="#contacto">Contacto</a></li>
+        </ul>
+      </div>
+    </div>
+  </nav>
+
+  <div class="container-fluid my-4">
+    <section id="inicio" class="py-4">
+      <div class="row">
+        <aside class="col-md-2 d-none d-md-block">
+        </aside>
+
+        <main class="col-12 col-md-8 bg-white p-4 rounded shadow-sm">
+          <h1 class="display-5 fw-bold text-primary mb-3">Bienvenidos a Nuestro Blog</h1>
+          <p class="lead text-secondary">Explora las últimas tendencias en desarrollo web, arquitectura y tecnología.</p>
+          <hr>
+          <article class="my-4">
+            <h2 class="h4 fw-semibold">Refactorizando con Bootstrap 5</h2>
+            <p class="text-muted small">Publicado hoy por el Equipo de Desarrollo</p>
+            <img src="https://picsum.photos/800/350" class="img-fluid rounded mb-3" alt="Imagen aleatoria del blog">
+            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
+          </article>
+        </main>
+        <aside class="col-md-2 d-none d-md-block">
+        </aside>
+      </div>
+    </section>
+
+    <section id="quienes-somos" class="py-4">
+      <div class="row">
+        <aside class="col-md-2 d-none d-md-block"></aside>
+
+        <div class="col-12 col-md-8 bg-white p-4 rounded shadow-sm">
+          <h2 class="fw-bold text-primary mb-3">Quiénes Somos</h2>
+          <p>Somos un equipo de desarrolladores apasionados por construir interfaces limpias, accesibles y responsivas. Este proyecto nació con el objetivo de compartir nuestro aprendizaje técnico y crear una comunidad de desarrollo colaborativa.</p>
+          
+          <div class="row g-3 mt-2">
+            <div class="col-sm-6">
+              <div class="p-3 border rounded bg-light">
+                <h3 class="h5 fw-bold text-dark">Nuestra Misión</h3>
+                <p class="mb-0 small">Transformar diseños y wireframes en aplicaciones web modernas utilizando estándares de la industria y frameworks ágiles.</p>
+              </div>
+            </div>
+            <div class="col-sm-6">
+              <div class="p-3 border rounded bg-light">
+                <h3 class="h5 fw-bold text-dark">El Equipo</h3>
+                <p class="mb-0 small">Especialistas en frontend y backend trabajando juntos para ofrecer la mejor experiencia de lectura en este blog.</p>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <aside class="col-md-2 d-none d-md-block"></aside>
+      </div>
+    </section>
+
+    <section id="contacto" class="py-4">
+      <div class="row">
+        <aside class="col-md-2 d-none d-md-block"></aside>
+
+        <div class="col-12 col-md-8 bg-white p-4 rounded shadow-sm">
+          <h2 class="fw-bold text-primary mb-3">Contacto</h2>
+          <p class="text-secondary">¿Tienes alguna duda o sugerencia? Envíanos un mensaje directo.</p>
+
+          <!-- Contenedor donde aparecerá la alerta en directo -->
+          <div id="liveAlertPlaceholder"></div>
+
+          <form id="contactForm">
+            <div class="mb-3">
+              <label for="emailInput" class="form-label fw-semibold">Correo electrónico</label>
+              <input type="email" class="form-control" id="emailInput" placeholder="nombre@ejemplo.com" required>
+            </div>
+            <div class="mb-3">
+              <label for="mensajeTextarea" class="form-label fw-semibold">Mensaje</label>
+              <textarea class="form-control" id="mensajeTextarea" rows="4" placeholder="Escribe tu mensaje aquí..." required></textarea>
+            </div>
+            <button type="submit" class="btn btn-primary" id="liveAlertBtn">Enviar mensaje</button>
+          </form>
+        </div>
+
+        <aside class="col-md-2 d-none d-md-block"></aside>
+      </div>
+    </section>
+
+  </div>
+  <script src="script.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL" crossorigin="anonymous"></script>
+  <script src="https://replit.com/public/js/replit-badge-v2.js" theme="dark" position="bottom-right"></script>
+</body>
+
+</html>
